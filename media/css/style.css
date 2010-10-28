@@ -1,0 +1,342 @@
+body {
+    color:#BFBFBF;
+    font-size:1em;
+    font-family: Palatino, georgia, "times new roman", serif; 
+    margin:0;
+    padding:0;
+}
+.inside {
+    width:800px;
+    margin-left:auto;
+    margin-right:auto;
+    clear:both;
+}
+
+a {
+    color: OliveDrab;
+    text-decoration: none;
+}
+blockquote {
+    padding-left:1em;
+    border-left:2px solid DarkGrey;
+    color:DarkSlateGray;
+}
+hr {
+    width: 50%;
+    border: solid black;
+    border-width: 1px;
+}
+
+#header {
+    background:#000;
+    font-weight: bold;
+}
+
+#header .inside {
+    padding:2em 0;
+}
+
+#header .title {
+    font-size:3em;
+    font-weight: 800;
+    color: white;
+    border-right:1px solid gray;
+    float:left;
+    margin:0 0.5em 0 -10px;
+    padding:0 0.5em 0.25em 0;
+}
+
+#header .title a {
+    color:#FFF;
+    text-decoration:bold;
+}
+
+#header p {
+    line-height:auto;
+    margin:0;
+    color: #DDD;
+    padding-top: 4px;
+}
+
+#primary {
+    color:gray;
+    background-image:url(images/maintop.png);
+    background-color:#fff;
+    background-repeat:repeat-x;
+    background-position:top;
+    width: auto;
+    padding-top: 1.5 em;
+}
+
+#primary .content {
+    width: 725px;
+    margin: auto;
+}
+
+.content {
+    overflow:hidden;
+    color: black
+}
+
+.content p {
+    line-height: 1.2em;
+}
+
+.content-title {
+    font-size: 2.5em;
+    font-weight:900;
+    color:#598D32;
+    margin-top: 10px;
+}
+
+.content-title a {
+    color:#598D32;
+    text-decoration:none;
+}
+
+#content-menu {
+    font-size: .8969em;
+    padding: 0px 1.5em;
+    border-style: none;
+    color: black;
+    text-align: left;
+}
+#content-menu .left-block {
+    margin-left:10%;
+    width:40%;
+    float:left;
+}
+#content-menu .right-block {
+    margin-right:10%;
+    width:40%;
+    float:right;
+}
+
+.content .details {
+    text-align:right;
+    font-size: 1em;
+    font-weight: 800;
+    text-align:right;
+    float:right;
+}
+.meta {
+    font-family: verdana, helvetica, sans-serif;
+    line-height: 1.25em;
+    font-size: .75em;
+    color: Gray;
+}
+
+#menu {
+    font-family: verdana, helvetica, sans-serif;
+    font-size:.8em;
+    font-weight: bold;
+    background-image:url(images/menu.png);
+    height:26px;
+    position:static;
+}
+
+#menu .menu,#menu li {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+#menu .menu {
+    background:transparent url("images/menu_right.png") repeat-y left top;
+    height:26px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding:0 0 0 1px;
+    width:730px;
+    margin:0 auto;
+}
+#menu .menu li {
+    float:left;
+    line-height:25px;
+    height:26px;
+    background-image:url(images/menu_left.png);
+    background-repeat:no-repeat;
+    background-position:left top;
+    padding-left: 10px;
+}
+#menu .menu a {
+    height:26px;
+    background-position:right top;
+    background-repeat:no-repeat;
+    background-image:url(images/menu_right.png);
+    color:#ffffff;
+    display:block;
+    text-align:left;
+    padding-right: 10px;
+}
+#menu .menu a:hover{
+    color: black;
+}
+
+
+#ancillary {
+    background-color:#272727;
+    width: 100%;
+    margin: 0px;
+}
+#ancillary p{
+    color: DarkGray;
+    margin-top: 0em;
+}
+#ancillary li {
+    list-style: none;
+    margin-left: -2em;
+    padding: 0px;
+    text-indent: 0px;
+}
+#ancillary ul {
+    margin-top: 0em;
+}
+#ancillary h1 {
+    margin: 8px 0 0 0;
+}
+#ancillary .first {
+    width: 250px;
+}
+#ancillary .second {
+    width: 200px;
+    text-align: left;
+    margin-left:90px;
+    margin-right:10px;
+}
+#ancillary .third {
+    width: 250px;
+    text-align: right;
+}
+
+
+
+#footer {
+    font-size: .9em;
+    font-weight: bold;
+    clear:both;
+    color:#939393;
+    background:#000;
+}
+#footer .inside {
+    height:35px;
+    padding:0 2em;
+}
+#footer p {
+    line-height:35px;
+    margin:0;
+}
+#footer p.attributes a {
+    text-decoration:none;
+    color:#525252;
+    padding:0 0 0 1em;
+}
+.right,#footer p.attributes {
+    float:right;
+}
+
+
+
+
+.block,#footer p.copyright {
+    float:left;
+}
+p.copyright a{color:white;}
+p.copyright a:hover{color:#666;}
+
+body a:hover {
+    color: DarkSlateGray;
+}
+blockquote a:hover {
+    color: black;
+}
+
+.clear {
+    clear:both;
+    height:1px;
+    font-size:1px;
+    line-height:1px;
+}
+
+.hide {
+    display:none;
+}
+
+/* @group Footnotes
+.footnotes { color: grey; }
+.footnotes:hover { color: black; }
+.footnotes ol li {
+	list-style-type: decimal;
+	font-size: 80%;
+	line-height: 1.5em;
+} */
+.footnotes ol li > a { display: none; }
+/* @end */
+
+
+/* Wiki Forums*/
+
+form{
+	font-size: 1em;
+	margin: auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+.fb_submit{
+        float: left;
+	margin-bottom: 1em; 
+}
+#signin_name_row{
+        margin-top: 1em;
+}
+#signin_openid{
+        margin-top: 1em;
+}
+textarea{
+	font-family: "inconsolata", "monaco", "droid sans mono", fixed;
+	font-size: 1.1em;
+	border: solid 1px;
+	width: auto;
+	margin-bottom: 10px;
+}
+input#comments{
+	font-family: "inconsolata", "monaco" "droid sans mono", fixed;
+	font-size: 1.1em;
+	border: solid 1px;
+	width: 550px;
+	line-height: 1em;
+	background-color: #fff;	
+}
+input#comments{
+	font-family: "inconsolata", "monaco" "droid sans mono", fixed;
+	font-size: 1.1em;
+	border: solid 1px;
+	width: 550px;
+	line-height: 1em;
+	background-color: #fff;	
+}
+input[type="submit"]{
+	font-family: "inconsolata", "monaco" "droid sans mono", fixed;
+	font-weight: bold;
+	border: solid 1px;
+	line-height: 1em;
+	margin-top: 10px;
+        margin-right: 1em
+	padding: 3px;
+	text-align: center;
+}
+#blogform input[name="title"]{
+	font-family: "inconsolata", "monaco" "droid sans mono", fixed;
+	font-size: 1em;
+	border: solid 1px;
+	line-height: 1.2em;
+	font-size: 1.2em;
+	margin-left: .4em;
+	margin-right: .4em;
+}
+#blogform input[type="submit"]{
+	font-family: "inconsolata", "monaco" "droid sans mono", fixed;
+	font-size: 1em;
+	border: solid 1px;
+	line-height: 1em;
+	font-size: 1em;
+}
