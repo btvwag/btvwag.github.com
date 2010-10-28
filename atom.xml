@@ -5,10 +5,10 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Burlington Web Application Group (BTVWAG)</title>
- <link href="http://btvwag.github.com/atom.xml" rel="self"/>
- <link href="http://btvwag.github.com/"/>
+ <link href="http://www.btvwag.org/atom.xml" rel="self"/>
+ <link href="http://www.btvwag.org/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://btvwag.github.com/</id>
+ <id>http://www.btvwag.org/</id>
  <author>
    <name>BTVWAG</name>
    <email>owner@btvwag.org</email>
@@ -17,9 +17,9 @@ layout: nil
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title | xml_escape }}</title>
-   <link href="http://btvwag.github.com{{ post.url }}"/>
+   <link href="http://www.btvwag.org{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://btvwag.github.com{{ post.id }}</id>
+   <id>http://www.btvwag.org{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
