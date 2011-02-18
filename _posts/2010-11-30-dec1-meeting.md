@@ -15,5 +15,5 @@ As a practical guide for those interested in trying out, learning or improving y
 
 Pizza will be provided.  Feel free to BYOB.
 
-If you have any questions, please contact Adam ( adam [at] agillionapps.com ). Hope to see you there.
+If you have any questions, please contact Adam ( adam at agillionapps.com ). Hope to see you there.
 
