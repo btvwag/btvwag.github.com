@@ -8,7 +8,7 @@ pre {
 body {
     color:#BFBFBF;
     font-size:1em;
-    font-family: Palatino, georgia, "times new roman", serif; 
+    font-family: Palatino, georgia, "times new roman", serif;
     margin:0;
     padding:0;
 }
@@ -94,7 +94,7 @@ hr {
     font-weight:900;
     color:#598D32;
     margin-top: 10px;
-	clear:both;
+  clear:both;
 }
 
 .content-title a {
@@ -273,9 +273,9 @@ blockquote a:hover {
 .footnotes { color: grey; }
 .footnotes:hover { color: black; }
 .footnotes ol li {
-	list-style-type: decimal;
-	font-size: 80%;
-	line-height: 1.5em;
+  list-style-type: decimal;
+  font-size: 80%;
+  line-height: 1.5em;
 } */
 .footnotes ol li > a { display: none; }
 /* @end */
@@ -284,14 +284,14 @@ blockquote a:hover {
 /* Wiki Forums*/
 
 form{
-	font-size: 1em;
-	margin: auto;
-	margin-right: auto;
-	margin-left: auto;
+  font-size: 1em;
+  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 .fb_submit{
         float: left;
-	margin-bottom: 1em; 
+  margin-bottom: 1em;
 }
 #signin_name_row{
         margin-top: 1em;
@@ -300,51 +300,51 @@ form{
         margin-top: 1em;
 }
 textarea{
-	font-family: "inconsolata", "monaco", "droid sans mono", fixed;
-	font-size: 1.1em;
-	border: solid 1px;
-	width: auto;
-	margin-bottom: 10px;
+  font-family: "inconsolata", "monaco", "droid sans mono", fixed;
+  font-size: 1.1em;
+  border: solid 1px;
+  width: auto;
+  margin-bottom: 10px;
 }
 input#comments{
-	font-family: "inconsolata", "monaco" "droid sans mono", fixed;
-	font-size: 1.1em;
-	border: solid 1px;
-	width: 550px;
-	line-height: 1em;
-	background-color: #fff;	
+  font-family: "inconsolata", "monaco" "droid sans mono", fixed;
+  font-size: 1.1em;
+  border: solid 1px;
+  width: 550px;
+  line-height: 1em;
+  background-color: #fff;
 }
 input#comments{
-	font-family: "inconsolata", "monaco" "droid sans mono", fixed;
-	font-size: 1.1em;
-	border: solid 1px;
-	width: 550px;
-	line-height: 1em;
-	background-color: #fff;	
+  font-family: "inconsolata", "monaco" "droid sans mono", fixed;
+  font-size: 1.1em;
+  border: solid 1px;
+  width: 550px;
+  line-height: 1em;
+  background-color: #fff;
 }
 input[type="submit"]{
-	font-family: "inconsolata", "monaco" "droid sans mono", fixed;
-	font-weight: bold;
-	border: solid 1px;
-	line-height: 1em;
-	margin-top: 10px;
+  font-family: "inconsolata", "monaco" "droid sans mono", fixed;
+  font-weight: bold;
+  border: solid 1px;
+  line-height: 1em;
+  margin-top: 10px;
         margin-right: 1em
-	padding: 3px;
-	text-align: center;
+  padding: 3px;
+  text-align: center;
 }
 #blogform input[name="title"]{
-	font-family: "inconsolata", "monaco" "droid sans mono", fixed;
-	font-size: 1em;
-	border: solid 1px;
-	line-height: 1.2em;
-	font-size: 1.2em;
-	margin-left: .4em;
-	margin-right: .4em;
+  font-family: "inconsolata", "monaco" "droid sans mono", fixed;
+  font-size: 1em;
+  border: solid 1px;
+  line-height: 1.2em;
+  font-size: 1.2em;
+  margin-left: .4em;
+  margin-right: .4em;
 }
 #blogform input[type="submit"]{
-	font-family: "inconsolata", "monaco" "droid sans mono", fixed;
-	font-size: 1em;
-	border: solid 1px;
-	line-height: 1em;
-	font-size: 1em;
+  font-family: "inconsolata", "monaco" "droid sans mono", fixed;
+  font-size: 1em;
+  border: solid 1px;
+  line-height: 1em;
+  font-size: 1em;
 }

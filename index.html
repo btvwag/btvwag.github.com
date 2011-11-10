@@ -1,22 +1,22 @@
 ---
 layout: default
-title:
+title: Welcome
 ---
 
 <div class="clear"></div>
 
-{% for post in site.posts limit:5 %}
+{% for post in site.categories.posts limit:5 %}
     <div class="content-title">
         {{ post.title }}
     </div>
     {{ post.content }}
     <div class="details">
         <p>
-            &mdash; {{ post.byline }} on {{ post.date | date_to_long_string }} 
+            &mdash; {{ post.byline }} on {{ post.date | date_to_long_string }}
             &bull; <a href="{{ post.url }}">permalink</a>
             &bull; <a href="{{ post.url }}#disqus_thread">commentary</a><br />
 
-            <em>tags:</em> 
+            <em>tags:</em>
             {% for t in post.tags %}
                 <a href='http://www.google.com/search?q={{ t | escape }}+site:www.btvwag.org'>{{ t }}</a>{% if forloop.last == false %}, {% endif %}
             {% endfor %}
