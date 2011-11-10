@@ -3,6 +3,7 @@ layout: post
 title: Initial Site Launch
 byline: written by Nowell Strite
 tags: [hadoop, rails, git, github]
+category: posts
 ---
 
 I attended my first BTVWAG meetup in Burlington today, where @bseanvt presented
