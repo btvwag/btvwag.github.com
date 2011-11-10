@@ -348,3 +348,13 @@ input[type="submit"]{
   line-height: 1em;
   font-size: 1em;
 }
+.job {
+  border-top:solid 1px #e1e1e1;
+  padding:20px;
+}
+.job .content-title {
+  margin:0 0 10px 0;
+}
+.job h2 {
+  margin:0px;
+}
