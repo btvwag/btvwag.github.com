@@ -2,20 +2,27 @@
 layout: default
 ---
 
-<div class="meta" align="center">  
-  tags:
-    {% for t in page.tags %}
-        <a href='http://www.google.com/search?q={{ t | escape }}+site:www.btvwag.org'>{{ t }}</a>
-    {% if forloop.last == false %}, {% endif %}
-    {% endfor %}
-</div>
 
+<div class="content-title">
+    {{ page.title }}
+</div>
 {{ content }}
+{% if page.slides %}
+<h3>Slides from Meetup</h3>
+  {{ page.slides }}
+{% endif %}
 
 <div class="details">
-  &mdash; {{ page.byline }} on {{ page.date | date_to_long_string }} 
-  &bull; <a href="{{ page.url }}">Permalink</a></p> 
-  &bull; <a href="#disqus_thread">Comments</a>
+    <p>
+        &mdash; {{ page.byline }} on {{ page.date | date_to_long_string }}
+        &bull; <a href="{{ page.url }}">permalink</a>
+        &bull; <a href="{{ page.url }}#disqus_thread">commentary</a><br />
+
+        <em>tags:</em>
+        {% for t in page.tags %}
+            <a href='http://www.google.com/search?q={{ t | escape }}+site:www.btvwag.org'>{{ t }}</a>{% if forloop.last == false %}, {% endif %}
+        {% endfor %}
+    </p>
 </div>
 
 <div class="clear"></div>

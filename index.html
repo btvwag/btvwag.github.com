@@ -10,6 +10,10 @@ title: Welcome
         {{ post.title }}
     </div>
     {{ post.content }}
+    {% if post.slides %}
+    <h3>Slides from Meetup</h3>
+      {{ post.slides }}
+    {% endif %}
     <div class="details">
         <p>
             &mdash; {{ post.byline }} on {{ post.date | date_to_long_string }}
