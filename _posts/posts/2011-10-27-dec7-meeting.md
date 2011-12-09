@@ -4,6 +4,7 @@ title: Software Craftsmanship from a Product Owner's Perspective on December 7th
 byline: written by Adam Bouchard
 tags: [discussion]
 category: posts
+slides: <script src="http://speakerdeck.com/embed/4ee2119f04357e004d00ae65.js"></script>
 ---
 
 Please [register](http://www.eventbrite.com/event/2474489264) and join us on December 7th, 2011 from 6:30 - 8:30 pm at
