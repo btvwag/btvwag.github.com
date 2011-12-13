@@ -18,6 +18,8 @@ and offer up a pull request.</p>
         </div>
         <h2>{{ job.company }}</h2>
         {{ job.content }}
-        <a href="{{ job.link }}" target="_blank">More Information</a>
+        {% if job.link %}
+          <a href="{{ job.link }}" target="_blank">More Information</a>
+        {% endif %}
     </div>
 {% endfor %}
