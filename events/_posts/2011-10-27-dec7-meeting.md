@@ -3,7 +3,6 @@ layout: post
 title: Software Craftsmanship from a Product Owner's Perspective on December 7th, 2011
 byline: written by Adam Bouchard
 tags: [discussion]
-category: posts
 slides: <script src="http://speakerdeck.com/embed/4ee2119f04357e004d00ae65.js"></script>
 ---
 
@@ -15,6 +14,5 @@ Software Craftsmanship has been called "The Fifth Agile Value." The vocabulary o
 Dryfoos began his IT career at Ben & Jerry's. He pioneered the use of new media becoming one of the first end users of Apple's QuickTime and building presentations, trainings and web-based games. He moved on through jobs in Vermont as a developer, a web development manger and a partner at Montpelier's Bear Code - a software development firm where he began to explore agile methodologies. After a stint in New York where he was the Engineering Manager on a team practicing eXtreme Programming and actively pursuing the notion of Software Craftsmanship, Dryfoos returned to Vermont in 2010 to accept a position as Product Owner with GE Healthcare.
 
 If you have any questions, please contact Adam ( adam at agilionapps.com ).
-Hope to see you there.
 
-Please register at [http://www.eventbrite.com/event/2474489264](http://www.eventbrite.com/event/2474489264)
+Hope to see you there.

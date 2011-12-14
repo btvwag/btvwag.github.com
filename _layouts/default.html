@@ -1,59 +1,69 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html >
+{% assign base = site.baseurl %}
+<html>
 <head>
-    <link rel="stylesheet" href="/media/css/style.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="/media/css/syntax.css" type="text/css" media="screen" />
-    <link href="/atom.xml" rel="alternate" title="BTVWAG" type="application/atom+xml" />
-    <title>{{ page.title }} :Burlington Web Application Group (BTVWAG)</title>
+  <meta charset='UTF-8'/>
+  <title>{% if page.url == '/index.html' %}{{ page.title }}{% else %}{{ page.title }}{% endif %}</title>
+  <link rel='stylesheet' href='{{ base }}/site.css' type='text/css'/>
+  <!--[if IE]><link rel='stylesheet' href='{{ base }}/site-ie.css' type='text/css'/><![endif]-->
+  <link rel='shortcut icon' href='{{ base }}/images/favicon.ico' type='image/x-icon' />
+  <link href='http://fonts.googleapis.com/css?family=Jockey+One' rel='stylesheet' type='text/css'>
+  <script type='text/javascript'>
+    var site = {
+      twitter_search: '{{ site.twitter_search }}',
+      github_language: '{{ site.github_language }}',
+      github_login: '{{ site.github_login }}',
+      github_repo: '{{ site.github_repo }}',
+      hashtag: '{{ site.hashtag }}'
+    };
+  </script>
+  <script src='{{ base }}/js/jquery-1.6.4.min.js' type='text/javascript'></script>
+  <script src='{{ base }}/js/underscore.js' type='text/javascript'></script>
+  <script src='{{ base }}/js/backbone.js' type='text/javascript'></script>
+  <script src='{{ base }}/js/site.js' type='text/javascript'></script>
 </head>
 <body>
-    <div id="header">
-        <div class="inside">
-            <div class="title"><a href="/">BTVWAG</a></div>
-            <p>Burlington Web Application Group &mdash; A place for technology
-                enthusiasts focused on web development come together to share ideas.</p>
+  <div class='limiter'>
+    <aside>
+      <div class='buttons'>
+        <a class='watch' href='http://github.com/{{ site.github_login }}/{{ site.github_repo }}'>Watch this event</a>
+        <div class='watch-docs'>
+          <p>Watch this event by watching its repository on GitHub.</p>
+          <ol>
+            <li>Click on the "Watch this event" button.</ul>
+            <li>Login to GitHub or signup for a new account.</ul>
+            <li>Click the watch button for the repo.</ul>
+        </ol>
+        <img src='assets/watch.png' />
         </div>
-    </div>
-    <div id="menu">
-        <ul class="menu">
-            <li><a href="/">Home</a></li>
-            <li><a href="/jobs">Jobs</a></li>
-            <li><a href="http://www.linkedin.com/groups?gid=3092379">LinkedIn</a></li>
-            <li><a href="http://twitter.com/btvwag">Twitter</a></li>
-            <li><a href="http://github.com/btvwag">GitHub</a></li>
+      </div>
+
+      <div class='followers clearfix'>
+      </div>
+
+      <div class='follower-project clearfix'>
+        <h2>A member's {{ site.github_language }} project</h2>
+      </div>
+      <div class='tweets clearfix'>
+        <h2>Tweets that mention {{ site.hashtag }}</h2>
+      </div>
+      <div class='editing'><p>This website is <a href='http://github.com/{{ site.github_login }}/{{ site.github_repo }}'>open source</a> and you can help us edit it. To submit a change, <a href='http://help.github.com/fork-a-repo/'>fork this repo</a>, commit your changes, and send us a <a href='http://help.github.com/pull-requests/'>pull request</a>.</p></div>
+    </aside>
+    <div id='main'>
+      <header>
+        <h1><a class='logo' href="/"><span class="red">btv</span>wag.</a></h1>
+        <p>Burlington Web Application Group — A place for technology enthusiasts focused on web development come together to share ideas.</p>
+        <ul class="nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/archives.html">Archives</a></li>
+          <li><a href="/jobs.html">Jobs</a></li>
         </ul>
+      </header>
+      <div id='content'>
+        {{  content  }}
+      </div>
     </div>
-
-    <div id="primary">
-        <div class="inside">
-            <div class="content">
-                {{ content }}
-            </div>
-        </div>
-    </div>
-    <hr class="hide" />
-
-    <div id="ancillary">
-        <a name="menu"></a>
-        <div class="inside">
-            <div class="block first">
-            </div>
-            <div class="block second">
-            </div>
-            <div class="block third">
-            </div>
-        </div>
-        <div class="clear"></div>
-    </div>
-    <div id="footer">
-        <div class="inside">
-            <div class="utom">
-                <p class="copyright">Theme adapted from
-                    <a href="http://git.cyborginstitute.net/?p=cyborginstitute.com.git">cyberinstitue</a>
-                </p>
-            </div>
-        </div>
-    </div>
+  </div>
 </body>
 <script type="text/javascript">
 

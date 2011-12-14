@@ -1,7 +1,0 @@
-To develop pages locally, but preview what they will look like when published to GitHub you can install jekyll.
-
-    gem install jekyll
-
-Then once installed you can run this from the root of this project.
-
-    jekyll --serve --auto --pygments --lsi

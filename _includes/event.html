@@ -1,0 +1,17 @@
+<div class="event">
+  <h2>{{ item.title }}</h2>
+  <small class='date'>
+    {{ item.date | date:"%b %d %Y" }}
+  </small>
+  {% if item.rsvp_url %}
+    <a href='{{ item.rsvp_url }}'>RSVP</a>
+  {% endif %}
+  {{ item.content }}
+
+  {% if item.slides %}
+    <h2 class="title-block" id="down">Slides from Meetup<span class="arrow">&#8595;</span></h2>
+    <div class="content-block">
+      {{ item.slides }}
+    </div>
+  {% endif %}
+</div>

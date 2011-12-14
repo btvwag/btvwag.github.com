@@ -1,7 +1,0 @@
-h1. Burlington Vermont Web Application Group
-
-Official website of the Burlington Vermont Web Application Group (BTVWAG).  Members are encouraged to help contribute towards continuous evolution of this site.
-
-h2. Getting Started
-
-h2. How to contribute

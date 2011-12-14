@@ -1,0 +1,292 @@
+---
+---
+{% include css/reset.css %}
+
+body {
+  background:#fff url(assets/background.png);
+  color:#444;
+  font:normal 14px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration:none;
+  color:#4183C4;
+}
+
+.limiter {
+  width:760px;
+  margin:0px auto;
+}
+
+aside {
+  position:relative;
+  float:right;
+  width:210px;
+  margin-top:175px;
+}
+
+header {
+  margin:80px 0 50px 20px;
+}
+
+.nav {
+  margin-top:15px;
+}
+
+.nav li {
+  float:left;
+  margin-right:10px;
+}
+
+.nav li a {
+  border:solid 1px #ccc;
+  padding:5px 10px 5px 10px;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+  background:#f2f2f2;
+}
+
+.nav li a:hover {
+  box-shadow:inset 1px 1px #dadada;
+}
+
+.nav li a:active {
+  box-shadow:inset 2px 2px #d2d2d2;
+}
+
+header .logo {
+  display:block;
+  height:80px;
+  font-size:100px;
+}
+
+header .logo .red {
+  color:#4183C4;
+}
+
+header a {
+  color:#000;
+}
+
+header a:visited {
+  color:#000;
+}
+
+#main,
+header .logo {
+  width:530px;
+}
+
+#content {
+  padding:0px 20px 20px;
+}
+
+.followers,
+.follower-project,
+.tweets,
+.editing { margin-bottom:10px; }
+
+.prose h1,
+.prose h2 {
+  font-family:'Jockey One', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size:22px;
+  font-weight:normal;
+}
+
+/* Prose */
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 { color:#000; }
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6,
+.prose p,
+.prose ul,
+.prose ol,
+.prose hr,
+.prose img,
+.prose blockquote,
+.prose pre,
+.prose table,
+.prose iframe,
+.prose object,
+.prose .ts-map {
+  display:block;
+  margin:0px 0px 20px;
+}
+
+.prose li { margin-left:30px; }
+.prose ul li { list-style:disc; }
+.prose ol li { list-style:decimal; }
+
+a.github-user,
+a.tweet {
+  display:block;
+  height:48px;
+  width:48px;
+  margin:0px 4px 4px 0px;
+  float:left;
+  position:relative;
+}
+
+.thumb {
+  display:block;
+  height:48px;
+  width:48px;
+  background:white 50% 50% no-repeat;
+  background-size:48px;
+}
+
+.popup {
+  display:none;
+  position:absolute;
+  right:55px;
+  top:-5px;
+  width:180px;
+  padding:5px 20px 5px 10px;
+  background:black;
+  border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+}
+
+.popup * { color:#fff; }
+
+.popup small {
+  display:block;
+  font-size:12px;
+}
+
+.tweet:hover,
+.github-user:hover { z-index:1; }
+.tweet:hover .caret,
+.tweet:hover .popup,
+.github-user:hover .caret,
+.github-user:hover .popup { display:block; }
+
+.buttons {
+  margin-bottom:10px;
+  width:205px;
+}
+
+.buttons a {
+  text-align:center;
+  font-size:15px;
+  line-height:36px;
+  display:block;
+  margin:0;
+  padding:0;
+  padding:4px;
+  color:#333;
+  background:#f2f2f2;
+  border:solid 1px #ccc;
+  text-shadow:1px 1px 0 white;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+}
+
+.buttons a:hover {
+  box-shadow:inset 1px 1px #dadada;
+}
+
+.buttons a:active {
+  box-shadow:inset 2px 2px #d2d2d2;
+}
+
+.watch-docs {
+  opacity:0;
+  z-index:-1000;
+  font-size:12px;
+  position:absolute;
+  top:-20px;
+  left:-320px;
+  width:275px;
+  background:white;
+  border:1px solid #CACACA;
+  padding:15px 15px 10px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  transition:opacity .25s, z-index 0s .25s;
+  -moz-transition:opacity .25s, z-index 0s .25s;
+  -webkit-transition:opacity .25s, z-index 0s .25s;
+}
+
+  .watch-docs.active {
+    opacity:100;
+    z-index:0;
+    transition:opacity .25s, z-index 0s 0s;
+    -moz-transition:opacity .25s, z-index 0s 0s;
+    -webkit-transition:opacity .25s, z-index 0s 0s;
+  }
+
+  .watch-docs ol {
+    list-style-type:decimal;
+    padding-left:20px
+  }
+
+  .watch-docs img {
+    margin:10px 15px 0px;
+    text-align:center;
+  }
+
+.editing {
+  font-size:11px;
+  line-height:16px;
+}
+
+.event {
+  margin-bottom:20px;
+}
+
+.title-block {
+  color:#fff !important;
+  background:#4183C4;
+  padding:8px 10px 10px 10px;
+  box-shadow:2px 2px #ccc;
+  cursor:pointer;
+  margin:20px 0 0 0 !important;
+}
+
+.content-block {
+  background:#fff;
+  border:solid 1px #ccc;
+  padding:10px;
+  margin:0 0 20px 0;
+}
+
+.title-block:hover {
+  background:#154b7f;
+}
+
+.title-block .arrow {
+  float:right;
+}
+
+/*
+** Markup free clearing
+** Details:http://www.positioniseverything.net/easyclearing.html
+*/
+.clearfix:after {
+  content:".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
+}
+
+.clearfix { display:inline-block; }
+
+/* Hides from IE-mac \*/
+* html .clearfix { height:1%; }
+.clearfix { display:block; }
+/* End hide from IE-mac */

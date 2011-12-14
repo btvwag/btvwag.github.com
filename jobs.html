@@ -1,0 +1,14 @@
+---
+layout: default
+title: node.dc
+rss: /blog.rss
+---
+<div class='jobs prose'>
+  <p>
+    Looking for a job? Below you'll find a few web application development jobs in the area. Have a web application development job to offer?
+    Email tristan at agilionapps.com or fork the BTVWAG repository and offer up a pull request.
+  </p>
+  {% for item in site.categories['jobs'] %}
+  {% include job.html %}
+  {% endfor %}
+</div>

@@ -1,4 +1,11 @@
-safe: true
-lsi: false
-pygments: true
 auto: true
+server: true
+exclude: README.md, .gitignore
+permalink: none
+baseurl:
+url: http://btvwag.org
+hashtag: '#btvwag'
+twitter_search: 'btvwag'
+github_login: 'btvwag'
+github_repo: 'btvwag.github.com'
+github_language: 'JavaScript'

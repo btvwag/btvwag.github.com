@@ -3,7 +3,6 @@ layout: post
 title: Dec 1st, 2010 meeting agenda
 byline: written by Adam Bouchard
 tags: [git, github]
-category: posts
 ---
 
 Many thanks to Nowell Strite for setting up the BTVWAG website domain and github account after the last meeting.

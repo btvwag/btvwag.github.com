@@ -3,7 +3,6 @@ layout: post
 title: Initial Site Launch
 byline: written by Nowell Strite
 tags: [hadoop, rails, git, github]
-category: posts
 ---
 
 I attended my first BTVWAG meetup in Burlington today, where @bseanvt presented
@@ -24,6 +23,4 @@ pitch in to develop a better website, please read up on the
 and then run the following command to clone this website, and start
 contributing.
 
-{% highlight bash %}
 git clone http://github.com/btvwag/btvwag.github.com.git
-{% endhighlight %}

@@ -1,0 +1,9 @@
+<div class="job">
+  <h2 class="title-block" id="down">{{ item.title }} | {{ item.company }}<span class="arrow">&#8595;</span></h2>
+  <div class="content-block" style="display:none;">
+    {{ item.content }}
+    {% if item.link %}
+      <a href="{{ item.link }}" target="_blank">More Information</a>
+    {% endif %}
+  </div>
+</div>
