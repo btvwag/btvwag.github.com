@@ -1,12 +1,12 @@
 ---
 company: MicroStrain
 title: Software Engineer
-link: www.microstrain.com/company/employment
+link: http://www.microstrain.com/company/employment
 category: jobs
 ---
 
 
-##Senior Software Engineer
+## Senior Software Engineer
 Like a Challenge?
 
 At MicroStrain we're constantly pushing the limits - designing the next generation of advanced sensing systems, and helping to build the Internet of things. And when we're not hard at work, we're hard at play - on the lakes and mountains of Vermont!
@@ -15,7 +15,7 @@ MicroStrain is seeking an experienced Software Engineer to help lead the develop
 
 Candidates should have a strong understanding of software development and basic computer theory, with a focus on desktop application development.  Expertise and interest in GUI layout and architecture development is a must.  The ideal candidate will also posses experience interfacing with hardware devices via a USB or serial connection.
 
-##Education and Experience:
+## Education and Experience:
 * BS in Computer Science or related field
 * 5+ years of professional desktop application development experience
 * Proven ability to develop well tested and maintainable code
@@ -24,14 +24,10 @@ Candidates should have a strong understanding of software development and basic 
 * Strong object oriented design skills
 * Ability to turn high level requirements into actionable tasks working with minimal supervision
 
-##Also Desired:
+## Also Desired:
 * Experience programming software to interface with hardware
 * Experience with cross platform development (Windows/Linux/Mac)
 * Knowledge of LabVIEW
 * Experiences with web application development
-
-
-For more information on this position, visit our website at
-[www.microstrain.com/company/employment](www.microstrain.com/company/employment)
 
 Little Sensors, Big Ideas
