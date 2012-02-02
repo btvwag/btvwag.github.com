@@ -28,6 +28,7 @@ longneck.githubWatcherProject = function(resp) {
     var shuffled = _(resp.data).shuffle();
 
     var getProjects = function(u) {
+        var languages = site.github_language.split(',')
         $.ajax({
             url: 'https://api.github.com/users/' + u.login + '/repos',
             dataType: 'jsonp',
@@ -37,7 +38,7 @@ longneck.githubWatcherProject = function(resp) {
                     .chain()
                     .shuffle()
                     .detect(function(r) {
-                        return r.language === site.github_language;
+                        return r.language === languages[Math.floor(Math.random()*languages.length + 1)];
                     })
                     .value();
 
@@ -45,7 +46,8 @@ longneck.githubWatcherProject = function(resp) {
                     getProjects(shuffled[++i]);
                 } else {
                     var template =
-                        ""
+                        "<h2>A member's <%=language%></h2>"
+                        + ""
                         + "<a target='_blank' href='http://github.com/<%=owner.login%>'><%=owner.login%></a>"
                         + " / "
                         + "<a target='_blank' href='<%=html_url%>'>"

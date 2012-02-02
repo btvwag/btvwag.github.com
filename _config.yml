@@ -8,4 +8,4 @@ hashtag: '#btvwag'
 twitter_search: 'btvwag'
 github_login: 'btvwag'
 github_repo: 'btvwag.github.com'
-github_language: 'JavaScript'
+github_language: ['Javascript', 'Ruby', 'PHP', 'Python']
