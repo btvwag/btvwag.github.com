@@ -25,6 +25,8 @@ $(document).ready(function() {
    	$('[href="/events.html"]').parent().addClass("active");
   }
 
+ 
+
 
   //jobs show/hide details
 	$(".content-block").hide();
