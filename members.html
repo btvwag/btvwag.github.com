@@ -1,42 +1,36 @@
 ---
 layout: default
-title: BTVWAG -Burlington Web Application Group 
+title: BTVWAG -Burlington Web Application Group
 meta-description: "A place for technology enthusiasts focused on web development come together to share ideas."
 meta-keywords: "Burlington, Group, Web, Ruby, Ruby on Rails, JavaScript, Vermont, Application Developer, HTML, CSS"
 ---
 
 <div class="row-fluid">
- <div class="span11 well">
-   <a href="http://www.linkedin.com/groups?about=&gid=3092379" class="btn btn-primary btn-large pull-right">Become a member</a>
-   <h1><span class="blue">btv</span>wag</h1>
-    <p>{{page.meta-description}}</p>
- </div>
+  <div class="span11 well">
+    <a href="http://www.linkedin.com/groups?about=&gid=3092379" class="btn btn-primary btn-large pull-right">Become a member</a>
+    <h1 class="span title"><span class="blue">btv</span>wag</h1>
+    <p class="span6 description">
+      {{page.meta-description}}
+      We meet once a month or two in Burlington to discuss a variety of web-related topics. See our <a href="{% for event in site.categories.event limit:1 %}{{ event.url }}{% endfor %}">past events</a> for a list of previous topics.
+    </p>
+    <div class="clearfix"></div>
+  </div>
 </div>
 
 <div class='row-fluid'>
   <div class="span8 well">
-
-  
-  <h2>Members</h2>
-  
-  
-  <p>members with public linkedin profiles ( <span style="color:#aaa">takes a few seconds to load...</span> )</p> 
-  {% for member in site.linkedin_members %}
-    <script type="IN/MemberProfile" data-id="http://www.linkedin.com/in/{{member}}" data-format="inline" data-related="false"></script>
-  {% endfor %}
-  
+    <h2>Members</h2>
+    <p>members with public linkedin profiles ( <span style="color:#aaa">takes a few seconds to load...</span> )</p>
+    {% for member in site.linkedin_members %}
+      <script type="IN/MemberProfile" data-id="http://www.linkedin.com/in/{{member}}" data-format="inline" data-related="false"></script>
+    {% endfor %}
   </div>
-  
+
   <div class="span3">
     <div class="well">
       <h3>Github watchers</h3>
       <div class="followers clearfix">
       </div>
     </div>
-  </div> 
+  </div>
 </div>
-
-
- 
-  
-    

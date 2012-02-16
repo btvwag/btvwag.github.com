@@ -1,47 +1,49 @@
-
-
 <h1>{{ item.title }}</h1>
-  
+<p>See <a href="http://guestlistapp.com/events/{{ item.guestlist_id }}">guest list</a></p>
+
 <table class="table">
   <tr>
-    <td>what</td><td>{{ item.title }} [{{ item.what }}]</td>
+    <td>what</td>
+    <td>{{ item.title }} [{{ item.what }}]</td>
   </tr>
   <tr>
-    <td>when</td><td>{{ item.when }}</td>
+    <td>when</td>
+    <td>{{ item.when }}</td>
   </tr>
   <tr>
-    <td>where</td><td>{{ item.where }}</td>
+    <td>where</td>
+    <td>{{ item.where }}</td>
   </tr>
   <tr>
-    <td>who</td><td>{{ item.who }}</td>
+    <td>who</td>
+    <td>{{ item.who }}</td>
   </tr>
   {% if item.capacity %}
   <tr>
-    <td>event capacity</td><td>{{item.capacity}} <a href="#">register</a></td>
-  </tr>      
+    <td>event capacity</td>
+    <td>{{item.capacity}} <a href="#">register</a></td>
+  </tr>
   {% endif %}
 </table>
 
-{% if item.guestlist_id %} 
- {% if item.date > site.time %}
- <h3>Registration</h3>
- <a class="guestlist-event-{{ item.guestlist_id }}" href="#"><img width="250" height="60" style="border: 0" src="http://guestlistapp.com/images/embed/register.png" alt="Register for Event" /></a>
- <p>See <a href="http://guestlistapp.com/events/{{ item.guestlist_id }}">guest list</a></p>
- {% endif %}
+<h3>Details</h3>
+{% if item.rsvp_url %}
+  <a href='{{ item.rsvp_url }}'>RSVP</a>
 {% endif %}
 
-<h3>Details</h3>
-  {% if item.rsvp_url %}
-    <a href='{{ item.rsvp_url }}'>RSVP</a>
-  {% endif %}
-  
- 
-  {{ content }}
+{{ content }}
 
-
-  {% if item.slides %}
-    <h2 class="title-block" id="down">Slides from Meetup<span class="arrow">&#8595;</span></h2>
-    <div class="content-block">
-      {{ item.slides }}
-    </div>
+<div class="register">
+  {% if item.guestlist_id %}
+   {% if item.date > site.time %}
+     <a class="guestlist-event-{{ item.guestlist_id }}" href="#"><img width="125" height="30" style="border: 0" src="http://guestlistapp.com/images/embed/register.png" alt="Register for Event" /></a>
+   {% endif %}
   {% endif %}
+</div>
+
+{% if item.slides %}
+  <h4 class="title-block" id="down">Slides from Meetup<span class="arrow">&#8595;</span></h4>
+  <div class="content-block">
+    {{ item.slides }}
+  </div>
+{% endif %}

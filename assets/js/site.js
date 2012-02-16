@@ -29,7 +29,7 @@ longneck.githubWatcherProject = function(resp) {
                     getProjects(shuffled[++i]);
                 } else {
                     var template =
-                        "<h2>A member's <%=language%></h2>"
+                        "<h4>A member's <%=language%> project</h4>"
                         + ""
                         + "<a target='_blank' href='http://github.com/<%=owner.login%>'><%=owner.login%></a>"
                         + " / "

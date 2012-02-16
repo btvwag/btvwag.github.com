@@ -1,50 +1,66 @@
 body {
-	background: #DDD url('../img/background.png') repeat;
+  background: #DDD url('../img/background.png') repeat;
 }
 
-.blue {
-  color:rgb(65,129,198);	
+h1.title {
+  font-size:600%;
+  margin:0;
+  padding:0 30px 0 0;
+  border-right:solid 1px #e1e1e1;
 }
+
+p.description { margin-top:25px; }
+
+a.pull-right { margin-top:25px; }
+
+span.blue { color:rgb(65,129,198); }
 
 h1 {
-	font-size:400%;
-	margin-bottom:12px;
+  font-size:300%;
+  line-height:120%;
+  margin-bottom:12px;
 }
 
 h2, h3, h4 {
-	color:#FF6A00;
+  color:#333;
 }
 
+div.register {
+  margin-top:20px;
+}
+
+footer { margin:30px 0 30px 0; }
+
 .mini {
-	font-size:10px;
-	color:#aaa;
+  font-size:10px;
+  color:#aaa;
 }
 
 .navbar, .navbar-inner {
-	background-image:none;
-	background-color:rgb(65,129,198);	
+  background-image:none;
+  background:#f2f2f2;
 }
 
 .navbar .nav > li > a {
-	color:#222;
+  color:#333;
   text-shadow: none;
 }
 
 .container-fluid {
   max-width:1200px;
-  margin:auto;	
+  margin:auto;
 }
 
 .well {
-	border:solid 1px #ccc;
+  border:solid 1px #ccc;
 }
 
 .watch-docs {
-	display:none;
-	border:1px solid #ccc;
-	padding:4px;
-	margin:3px;
-	background-color:#fff;
+  display:none;
+  border:1px solid #ccc;
+  padding:4px;
+  margin:3px;
+  background-color:#fff;
 }
 
 .title-block {
@@ -77,7 +93,7 @@ h2, h3, h4 {
 .editing { margin-bottom:10px; }
 
 .follower-project h2 {
-	color:#222;
+  color:#222;
 }
 
 a.github-user,
