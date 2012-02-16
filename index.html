@@ -7,7 +7,7 @@ meta-keywords: "Burlington, Group, Web, Ruby, Ruby on Rails, JavaScript, Vermont
 
 <div class="row-fluid">
   <div class="well">
-    <a href="events.html" class="btn btn-primary btn-large pull-right">Upcoming Events &raquo;</a>
+    <a href="{% for event in site.categories.event limit:1 %}{{ event.url }}{% endfor %}" class="btn btn-primary btn-large pull-right">Upcoming Events &raquo;</a>
     <h1><span class="blue">btv</span>wag</h1>
     <p>{{page.meta-description}}</p>
  </div>
