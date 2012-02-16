@@ -1,13 +1,27 @@
 ---
 layout: default
-title: btvwag
+title: BTVWAG -Burlington Web Application Group 
+meta-description: "A place for technology enthusiasts focused on web development come together to share ideas."
+meta-keywords: "Burlington, Group, Web, Ruby, Ruby on Rails, JavaScript, Vermont, Application Developer, HTML, CSS"
 ---
-<div class='jobs prose'>
+
+<div class="row-fluid">
+ <div class="span11 well">
+   <a href="mailto:{{ site.email }}" class="btn btn-primary btn-large pull-right">Add a job</a>
+    <h1><span class="blue">btv</span>wag</h1>
+    <p>{{page.meta-description}}</p>
+ </div>
+</div>
+
+<div class='row-fluid'>
+  <div class="span11 well">
+  <h2>Jobs</h2>
   <p>
     Looking for a job? Below you'll find a few web application development jobs in the area. Have a web application development job to offer?
     Email tristan at agilionapps.com or fork the BTVWAG repository and offer up a pull request.
   </p>
-  {% for item in site.categories['jobs'] %}
+  {% for item in site.categories.jobs %}
   {% include job.html %}
   {% endfor %}
-</div>
+  </div>
+</div><!--/row-->

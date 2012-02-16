@@ -1,9 +1,93 @@
 ---
 layout: default
-title: btvwag
+title: BTVWAG -Burlington Web Application Group 
+meta-description: "A place for technology enthusiasts focused on web development come together to share ideas."
+meta-keywords: "Burlington, Group, Web, Ruby, Ruby on Rails, JavaScript, Vermont, Application Developer, HTML, CSS"
 ---
-<div class='events prose'>
-  {% for item in site.categories['events'] limit:1 %}
-  {% include event.html %}
-  {% endfor %}
+
+<div class="row-fluid">
+  <div class="well">
+    <a href="events.html" class="btn btn-primary btn-large pull-right">Upcoming Events &raquo;</a>
+    <h1><span class="blue">btv</span>wag</h1>
+    <p>{{page.meta-description}}</p>
+ </div>
 </div>
+
+<div class="row-fluid">
+     
+  <div class="span9">
+    <div id="myCarousel" class="carousel slide well">
+      <div class="carousel-inner">
+         {% for item in site.categories.carousel %}
+           {% include carousel.html %}
+         {% endfor %}   
+      </div>
+      <!-- Carousel nav -->
+      <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+    
+    <div class="row-fluid">
+    <div class="span4">
+        <h2>Announcement</h2>
+        <p>Burlington Ruby Conference: July 27 - 29, 2012</p>
+        <a href="http://buruco.com"><img src="assets/img/buruco.png" width="200" height="45" alt="Buruco"></a>        
+        <p>Help us spread the word...</p>
+        <p><a class="btn" href="http://buruco.com">View details &raquo;</a></p>
+    </div><!--/span-->
+      
+    <div class="span4">
+         <h2>Github Highlight</h2>
+         <p>Randomly selected member github project</p>
+         <div class="follower-project clearfix">
+         </div>
+         <p><a class="btn" href="https://github.com/btvwag/btvwag.github.com">See more &raquo;</a></p>
+    </div><!--/span-->
+       
+    <div class="span4 twitter-watch">
+         <h2>Latest {{ site.hashtag }} tweets</h2>
+         <div class="tweets clearfix">
+         </div>
+         <p><a class="btn" href="https://twitter.com/#!/btvwag">See more &raquo;</a></p>
+    </div><!--/span-->
+    </div>
+  </div>
+    
+  <div class="span3">
+    <div class="well">
+      <h2>Become a member</h2>
+      <p>Check out our <a href="members.html">member profiles</a> and join our Linkedin group.</p> 
+    </div>
+    
+    <div class="well">
+      <h2>Become a sponsor</h2>
+      <p>Help sponsor one of our events. Checkout out past <a href="sponsors.html">sponsors</a></p>
+    </div>
+    
+    <div class="well">
+      <h2>Get updates</h2> 
+      <p>Event announcements on Agilion Apps newsletter</p>
+      <form action="http://agilionapps.us2.list-manage1.com/subscribe/post?u=bc988e5165d1f538a21085b04&amp;id=885f173827" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address">
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn-primary">
+      </form>
+          
+      <p>
+        <a href="https://twitter.com/btvwag" class="twitter-follow-button" data-show-count="false">Follow @btvwag</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </p>
+          
+          
+      <a class='watch' href='http://github.com/{{ site.github_login }}/{{ site.github_repo }}'>Watch on github</a>
+      <div class='watch-docs'>
+           <p>Watch this event by watching its repository on GitHub.</p>
+           <ol>
+             <li>Click on the "Watch this event" button.</ul>
+             <li>Login to GitHub or signup for a new account.</ul>
+             <li>Click the watch button for the repo.</ul>
+           </ol>
+           <img src='assets/img/watch.png' />
+      </div>
+    </div><!--/span-->     
+    </div>
+</div><!--/row-->

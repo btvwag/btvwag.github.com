@@ -1,0 +1,163 @@
+body {
+	background: #DDD url('../img/background.png') repeat;
+}
+
+.blue {
+  color:rgb(65,129,198);	
+}
+
+h2, h3, h4 {
+	color:#FF6A00;
+}
+
+.mini {
+	font-size:10px;
+	color:#aaa;
+}
+
+.navbar, .navbar-inner {
+	background-image:none;
+	background-color:rgb(65,129,198);	
+}
+
+.navbar .nav > li > a {
+	color:#222;
+}
+
+
+.watch-docs {
+	display:none;
+	border:1px solid #ccc;
+	padding:4px;
+	margin:3px;
+	background-color:#fff;
+}
+
+.title-block {
+  color:#fff !important;
+  background:#4183C4;
+  padding:8px 10px 10px 10px;
+  box-shadow:2px 2px #ccc;
+  cursor:pointer;
+  margin:20px 0 0 0 !important;
+}
+
+.content-block {
+  background:#fff;
+  border:solid 1px #ccc;
+  padding:10px;
+  margin:0 0 20px 0;
+}
+
+.title-block:hover {
+  background:#154b7f;
+}
+
+.title-block .arrow {
+  float:right;
+}
+
+.followers,
+.follower-project,
+.tweets,
+.editing { margin-bottom:10px; }
+
+.follower-project h2 {
+	color:#222;
+}
+
+a.github-user,
+a.tweet {
+  display:block;
+  height:48px;
+  width:48px;
+  margin:0px 4px 4px 0px;
+  float:left;
+  position:relative;
+}
+
+.thumb {
+  display:block;
+  height:48px;
+  width:48px;
+  background:white 50% 50% no-repeat;
+  background-size:48px;
+}
+
+
+.popup {
+  display:none;
+  position:absolute;
+  right:55px;
+  top:-5px;
+  width:180px;
+  padding:5px 20px 5px 10px;
+  background:black;
+  border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+}
+
+.popup * { color:#fff; }
+
+.popup small {
+  display:block;
+  font-size:12px;
+}
+
+.tweet:hover,
+.github-user:hover { z-index:1; }
+.tweet:hover .caret,
+.tweet:hover .popup,
+.github-user:hover .caret,
+.github-user:hover .popup { display:block; }
+
+.buttons {
+  margin-bottom:10px;
+  width:205px;
+}
+
+.buttons a {
+  text-align:center;
+  font-size:15px;
+  line-height:36px;
+  display:block;
+  margin:0;
+  padding:0;
+  padding:4px;
+  color:#333;
+  background:#f2f2f2;
+  border:solid 1px #ccc;
+  text-shadow:1px 1px 0 white;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+}
+
+.buttons a:hover {
+  box-shadow:inset 1px 1px #dadada;
+}
+
+.buttons a:active {
+  box-shadow:inset 2px 2px #d2d2d2;
+}
+
+
+/*
+** Markup free clearing
+** Details:http://www.positioniseverything.net/easyclearing.html
+*/
+.clearfix:after {
+  content:".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
+}
+
+.clearfix { display:inline-block; }
+
+/* Hides from IE-mac \*/
+* html .clearfix { height:1%; }
+.clearfix { display:block; }
+/* End hide from IE-mac */

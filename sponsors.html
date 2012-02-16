@@ -1,0 +1,31 @@
+---
+layout: default
+title: BTVWAG -Burlington Web Application Group 
+meta-description: "A place for technology enthusiasts focused on web development come together to share ideas."
+meta-keywords: "Burlington, Group, Web, Ruby, Ruby on Rails, JavaScript, Vermont, Application Developer, HTML, CSS"
+---
+
+<div class="row-fluid">
+ <div class="span11 well">
+    <a href="mailto:{{ site.email }}" class="btn btn-primary btn-large pull-right">Become a sponsor</a>
+    <h1><span class="blue">btv</span>wag</h1>
+    <p>{{page.meta-description}}</p>
+ </div>
+</div>
+
+<div class='row-fluid'>
+  <div class="span11 well">
+    <p>Sponsors help us keep the BTVWAG.org free to our community members.  Sponsors help out with hosting space and buying food, drinks, etc. Interested in helping to strengthen the Vermont tech community?</p> 
+
+    <p>Please <a href="mailto:adam@agilionapps.com">become a sponsor for our next event</a></p>
+   
+  <h2>Sponsors of the next event</h2>
+  
+  <h2>Past Sponsors</h2>
+  
+  {% for item in site.categories.sponsors %}
+   {% include sponsor.html %}
+  {% endfor %}
+  
+  </div>  
+</div><!--/row-->
