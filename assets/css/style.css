@@ -6,6 +6,11 @@ body {
   color:rgb(65,129,198);	
 }
 
+h1 {
+	font-size:400%;
+	margin-bottom:12px;
+}
+
 h2, h3, h4 {
 	color:#FF6A00;
 }
@@ -22,8 +27,17 @@ h2, h3, h4 {
 
 .navbar .nav > li > a {
 	color:#222;
+  text-shadow: none;
 }
 
+.container-fluid {
+  max-width:1200px;
+  margin:auto;	
+}
+
+.well {
+	border:solid 1px #ccc;
+}
 
 .watch-docs {
 	display:none;

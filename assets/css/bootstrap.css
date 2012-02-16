@@ -3260,6 +3260,8 @@ a.thumbnail:hover {
 .carousel .item > img {
   display: block;
   line-height: 1;
+  margin:auto;
+  width:110%;
 }
 .carousel .active, .carousel .next, .carousel .prev {
   display: block;
@@ -3290,7 +3292,7 @@ a.thumbnail:hover {
 .carousel-control {
   position: absolute;
   top: 40%;
-  left: 15px;
+  left: 25px;
   width: 40px;
   height: 40px;
   margin-top: -20px;
@@ -3309,7 +3311,7 @@ a.thumbnail:hover {
 }
 .carousel-control.right {
   left: auto;
-  right: 15px;
+  right: 25px;
 }
 .carousel-control:hover {
   color: #ffffff;
