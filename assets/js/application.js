@@ -17,12 +17,13 @@ $(document).ready(function() {
 	  $('.watch-docs').hide()
   });
 
-
-  //highlight selected navigation
-	$('.nav li').removeAttr("class").children("a").filter("[href='" + location.pathname + "']").parent().addClass("active");
+  //highlight selected navigation 
+  if (location.pathname != "/") {
+		$('.nav li').removeAttr("class").children("a").filter("[href='" + location.pathname + "']").parent().addClass("active");
   
-  if(location.pathname.match(/event/)) { 
-   	$('[href="/events.html"]').parent().addClass("active");
+	  if(location.pathname.match(/event/)) { 
+	   	$('[href="/events.html"]').parent().addClass("active");
+	  }
   }
 
  
