@@ -1,57 +1,56 @@
 body {
-	background: #DDD url('../img/background.png') repeat;
+  background: #DDD url('../img/background.png') repeat;
 }
 
-.blue {
-  color:rgb(65,129,198);	
+div.container-fluid { margin-top:60px; }
+
+a.brand {
+  font-weight:bold !important;
+  color:#333 !important;
 }
+
+span.blue { color:rgb(65,129,198); }
 
 h1 {
-	font-size:400%;
-	margin-bottom:12px;
+  font-size:300%;
+  line-height:120%;
+  margin-bottom:12px;
 }
 
 h2, h3, h4 {
-	color:#FF6A00;
+  color:#333;
 }
 
+footer { margin:30px 0 30px 0; }
+
 .mini {
-	font-size:10px;
-	color:#aaa;
+  font-size:10px;
+  color:#aaa;
 }
 
 .navbar, .navbar-inner {
-	background-image:none;
-	background-color:rgb(65,129,198);	
+  background-image:none;
+  background:#f2f2f2;
 }
 
 .navbar .nav > li > a {
-	color:#222;
+  color:#333;
   text-shadow: none;
 }
 
 .container-fluid {
   max-width:1200px;
-  margin:auto;	
+  margin:auto;
 }
 
 .well {
-	border:solid 1px #ccc;
-}
-
-.watch-docs {
-	display:none;
-	border:1px solid #ccc;
-	padding:4px;
-	margin:3px;
-	background-color:#fff;
+  border:solid 1px #ccc;
 }
 
 .title-block {
   color:#fff !important;
   background:#4183C4;
   padding:8px 10px 10px 10px;
-  box-shadow:2px 2px #ccc;
   cursor:pointer;
   margin:20px 0 0 0 !important;
 }
@@ -77,7 +76,7 @@ h2, h3, h4 {
 .editing { margin-bottom:10px; }
 
 .follower-project h2 {
-	color:#222;
+  color:#222;
 }
 
 a.github-user,
@@ -97,7 +96,6 @@ a.tweet {
   background:white 50% 50% no-repeat;
   background-size:48px;
 }
-
 
 .popup {
   display:none;
@@ -155,7 +153,6 @@ a.tweet {
 .buttons a:active {
   box-shadow:inset 2px 2px #d2d2d2;
 }
-
 
 /*
 ** Markup free clearing

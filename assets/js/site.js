@@ -29,7 +29,7 @@ longneck.githubWatcherProject = function(resp) {
                     getProjects(shuffled[++i]);
                 } else {
                     var template =
-                        "<h2>A member's <%=language%></h2>"
+                        "<h4>A member's <%=language%> project</h4>"
                         + ""
                         + "<a target='_blank' href='http://github.com/<%=owner.login%>'><%=owner.login%></a>"
                         + " / "
@@ -49,7 +49,7 @@ longneck.githubWatcherProject = function(resp) {
 };
 
 longneck.githubWatchers = function() {
-    var watchers = $('.followers');
+    var watchers = $('.github-followers');
     $.ajax({
         // TODO: this endpoint only returns maximum 30 users. Implement random
         // pagination so we see different groups of people.
@@ -76,14 +76,42 @@ longneck.githubWatchers = function() {
 };
 $(longneck.githubWatchers);
 
+longneck.twitterFollowers = function() {
+    var tweets = $('.twitter-followers');
 
-longneck.setup = function() {
+    $.ajax({
+        url: 'https://api.twitter.com/1/followers/ids.json?cursor=-1&screen_name=btvwag',
+        dataType: 'jsonp',
+        success: function(resp) {
+          renderFollowers(resp["ids"]);
+        }
+    });
+
+    function renderFollowers(ids) {
+      $.ajax({
+        url: 'http://api.twitter.com/1/users/lookup.json?user_id=' + ids.slice(0,100).join(","),
+        dataType: 'jsonp',
+        success: function(resp) {
+          if (!resp.length) return;
+          var template =
+              "<a target='_blank' href='http://twitter.com/<%=screen_name%>' class='tweet'>"
+              + "<span class='thumb' style='background-image:url(<%=profile_image_url%>)'></span>"
+              + "<span class='popup'>"
+              + "<span class='title'>@<%=screen_name%></span>"
+              + "</span>"
+              + "</a>";
+          var t = _(resp)
+              .map(function(i) { return _(template).template(i); })
+              .join('');
+          tweets.append(t).addClass('loaded');
+        }
+      });
+    }
+};
+$(longneck.twitterFollowers);
+
+longneck.tweets = function() {
     var tweets = $('.tweets');
-
-    $('.watch').hover(
-        function() { $('.watch-docs').addClass('active'); },
-        function() { $('.watch-docs').removeClass('active'); }
-    );
 
     $.ajax({
         url: 'http://search.twitter.com/search.json',
@@ -106,7 +134,7 @@ longneck.setup = function() {
         }
     });
 };
-$(longneck.setup);
+$(longneck.tweets);
 
 context.longneck = longneck;
 })(window);
