@@ -1,28 +1,30 @@
 <h1>{{ item.title }}</h1>
 
 <table class="table">
-  <tr>
-    <td>what</td>
-    <td>{{ item.title }} [{{ item.what }}]</td>
-  </tr>
-  <tr>
-    <td>when</td>
-    <td>{{ item.when }}</td>
-  </tr>
-  <tr>
-    <td>where</td>
-    <td>{{ item.where }}</td>
-  </tr>
-  <tr>
-    <td>who</td>
-    <td>{{ item.who }}</td>
-  </tr>
-  {% if item.capacity %}
-  <tr>
-    <td>event capacity</td>
-    <td>{{item.capacity}} <a href="#">register</a></td>
-  </tr>
-  {% endif %}
+  <tbody>
+    <tr>
+      <td>what</td>
+      <td>{{ item.title }} [{{ item.what }}]</td>
+    </tr>
+    <tr>
+      <td>when</td>
+      <td>{{ item.when }}</td>
+    </tr>
+    <tr>
+      <td>where</td>
+      <td>{{ item.where }}</td>
+    </tr>
+    <tr>
+      <td>who</td>
+      <td>{{ item.who }}</td>
+    </tr>
+    {% if item.capacity %}
+    <tr>
+      <td>event capacity</td>
+      <td>{{item.capacity}} <a href="#">register</a></td>
+    </tr>
+    {% endif %}
+  </tbody>
 </table>
 
 <h3>Details</h3>
@@ -32,14 +34,12 @@
 
 {{ content }}
 
-<div class="register">
-  {% if item.guestlist_id %}
-    {% if item.date > site.time %}
-      <p>See <a href="http://guestlistapp.com/events/{{ item.guestlist_id }}">who's coming.</a></p>
-      <a class="guestlist-event-{{ item.guestlist_id }} btn btn-primary" href="#">Register for Event</a>
-    {% endif %}
+{% if item.guestlist_id %}
+  {% if item.date > site.time %}
+    <p>See <a href="http://guestlistapp.com/events/{{ item.guestlist_id }}">who's coming.</a></p>
+    <a class="guestlist-event-{{ item.guestlist_id }} btn btn-primary" href="#">Register for Event</a>
   {% endif %}
-</div>
+{% endif %}
 
 {% if item.slides %}
   <h4 class="title-block" id="down">Slides from Meetup<span class="arrow">&#8595;</span></h4>

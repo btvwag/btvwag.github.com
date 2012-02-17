@@ -12,18 +12,13 @@ meta-keywords: "Burlington, Group, Web, Ruby, Ruby on Rails, JavaScript, Vermont
   </div><!--/span-->
 
   <div class="span3">
-    <div class="well sidebar-nav">
-      <h3>Upcoming Events</h3>
-      <ul class="nav nav-list">
-        {% for event in site.categories.event %}
-          {% if site.time <= event.date %}
-          <li>
-            <a href="{{event.url}}">{{event.when}}</a>
-            <span class="mini">{{ event.title }}</span>
-          </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
+    <div class="well">
+      <h2>About BTVWAG</h2>
+      <p class="description">
+        {{page.meta-description}}
+        We meet once a month or two in Burlington to discuss a variety of web-related topics. See our <a href="{% for event in site.categories.event limit:1 %}{{ event.url }}{% endfor %}">past events</a> for a list of previous topics.
+      </p>
+      <a href="mailto:{{ site.email }}" class="btn btn-primary btn-large">Suggest a topic</a>
     </div>
 
     <div class="well sidebar-nav">
