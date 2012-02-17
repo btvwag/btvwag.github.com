@@ -90,10 +90,21 @@ longneck.twitterFollowers = function() {
     function renderFollowers(ids) {
       console.log(ids.length)
       $.ajax({
-        url: 'http://api.twitter.com/1/users/lookup.json?user_id=' + ids.join(","),
+        url: 'http://api.twitter.com/1/users/lookup.json?user_id=' + ids.slice(0,100).join(","),
         dataType: 'jsonp',
-        success: function(r) {
-          console.log(resp);
+        success: function(resp) {
+          if (!resp.length) return;
+          var template =
+              "<a target='_blank' href='http://twitter.com/<%=screen_name%>' class='tweet'>"
+              + "<span class='thumb' style='background-image:url(<%=profile_image_url%>)'></span>"
+              + "<span class='popup'>"
+              + "<span class='title'>@<%=screen_name%></span>"
+              + "</span>"
+              + "</a>";
+          var t = _(resp)
+              .map(function(i) { return _(template).template(i); })
+              .join('');
+          tweets.append(t).addClass('loaded');
         }
       });
     }
