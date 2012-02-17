@@ -1,5 +1,4 @@
 <h1>{{ item.title }}</h1>
-<p>See <a href="http://guestlistapp.com/events/{{ item.guestlist_id }}">guest list</a></p>
 
 <table class="table">
   <tr>
@@ -35,9 +34,10 @@
 
 <div class="register">
   {% if item.guestlist_id %}
-   {% if item.date > site.time %}
-     <a class="guestlist-event-{{ item.guestlist_id }}" href="#"><img width="125" height="30" style="border: 0" src="http://guestlistapp.com/images/embed/register.png" alt="Register for Event" /></a>
-   {% endif %}
+    {% if item.date > site.time %}
+      <p>See <a href="http://guestlistapp.com/events/{{ item.guestlist_id }}">who's coming.</a></p>
+      <a class="guestlist-event-{{ item.guestlist_id }} btn btn-primary" href="#">Register for Event</a>
+    {% endif %}
   {% endif %}
 </div>
 

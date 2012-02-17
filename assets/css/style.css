@@ -2,16 +2,7 @@ body {
   background: #DDD url('../img/background.png') repeat;
 }
 
-h1.title {
-  font-size:600%;
-  margin:0;
-  padding:0 30px 0 0;
-  border-right:solid 1px #e1e1e1;
-}
-
-p.description { margin-top:25px; }
-
-a.pull-right { margin-top:25px; }
+h2.title { margin-right:20px; }
 
 span.blue { color:rgb(65,129,198); }
 
@@ -23,10 +14,6 @@ h1 {
 
 h2, h3, h4 {
   color:#333;
-}
-
-div.register {
-  margin-top:20px;
 }
 
 footer { margin:30px 0 30px 0; }
@@ -55,19 +42,10 @@ footer { margin:30px 0 30px 0; }
   border:solid 1px #ccc;
 }
 
-.watch-docs {
-  display:none;
-  border:1px solid #ccc;
-  padding:4px;
-  margin:3px;
-  background-color:#fff;
-}
-
 .title-block {
   color:#fff !important;
   background:#4183C4;
   padding:8px 10px 10px 10px;
-  box-shadow:2px 2px #ccc;
   cursor:pointer;
   margin:20px 0 0 0 !important;
 }
@@ -113,7 +91,6 @@ a.tweet {
   background:white 50% 50% no-repeat;
   background-size:48px;
 }
-
 
 .popup {
   display:none;
@@ -171,7 +148,6 @@ a.tweet {
 .buttons a:active {
   box-shadow:inset 2px 2px #d2d2d2;
 }
-
 
 /*
 ** Markup free clearing

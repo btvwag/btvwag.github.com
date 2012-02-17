@@ -7,21 +7,9 @@ meta-keywords: "Burlington, Group, Web, Ruby, Ruby on Rails, JavaScript, Vermont
 {% assign item = page %}
 
 <div class="row-fluid">
-  <div class="span11 well">
-    <a href="mailto:{{ site.email }}" class="btn btn-primary btn-large pull-right">Suggest an event</a>
-    <h1 class="span title"><span class="blue">btv</span>wag</h1>
-    <p class="span6 description">
-      {{page.meta-description}}
-      We meet once a month or two in Burlington to discuss a variety of web-related topics. See our <a href="{% for event in site.categories.event limit:1 %}{{ event.url }}{% endfor %}">past events</a> for a list of previous topics.
-    </p>
-    <div class="clearfix"></div>
-  </div>
-</div>
-
-<div class="row-fluid">
   <div class="span8 well">
     {% include event.html %}
-  </div>
+  </div><!--/span-->
 
   <div class="span3">
     <div class="well sidebar-nav">

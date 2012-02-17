@@ -49,7 +49,7 @@ longneck.githubWatcherProject = function(resp) {
 };
 
 longneck.githubWatchers = function() {
-    var watchers = $('.followers');
+    var watchers = $('.github-followers');
     $.ajax({
         // TODO: this endpoint only returns maximum 30 users. Implement random
         // pagination so we see different groups of people.
@@ -76,14 +76,8 @@ longneck.githubWatchers = function() {
 };
 $(longneck.githubWatchers);
 
-
-longneck.setup = function() {
-    var tweets = $('.tweets');
-
-    $('.watch').hover(
-        function() { $('.watch-docs').addClass('active'); },
-        function() { $('.watch-docs').removeClass('active'); }
-    );
+longneck.twitterFollowers = function() {
+    var tweets = $('.twitter-followers');
 
     $.ajax({
         url: 'http://search.twitter.com/search.json',
@@ -106,7 +100,34 @@ longneck.setup = function() {
         }
     });
 };
-$(longneck.setup);
+$(longneck.tweets);
+
+
+longneck.tweets = function() {
+    var tweets = $('.tweets');
+
+    $.ajax({
+        url: 'http://search.twitter.com/search.json',
+        data: { q: site.twitter_search, rpp:100 },
+        dataType: 'jsonp',
+        success: function(resp) {
+            if (!resp.results.length) return;
+            var template =
+                "<a target='_blank' href='http://twitter.com/<%=from_user%>/status/<%=id_str%>' class='tweet'>"
+                + "<span class='thumb' style='background-image:url(<%=profile_image_url%>)'></span>"
+                + "<span class='popup'>"
+                + "<span class='title'>@<%=from_user%></span>"
+                + "<small><%=text%></small>"
+                + "</span>"
+                + "</a>";
+            var t = _(resp.results.slice(0,30))
+                .map(function(i) { return _(template).template(i); })
+                .join('');
+            tweets.append(t).addClass('loaded');
+        }
+    });
+};
+$(longneck.tweets);
 
 context.longneck = longneck;
 })(window);
