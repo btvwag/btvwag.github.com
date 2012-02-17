@@ -80,28 +80,25 @@ longneck.twitterFollowers = function() {
     var tweets = $('.twitter-followers');
 
     $.ajax({
-        url: 'http://search.twitter.com/search.json',
-        data: { q: site.twitter_search, rpp:100 },
+        url: 'https://api.twitter.com/1/followers/ids.json?cursor=-1&screen_name=btvwag',
         dataType: 'jsonp',
         success: function(resp) {
-            if (!resp.results.length) return;
-            var template =
-                "<a target='_blank' href='http://twitter.com/<%=from_user%>/status/<%=id_str%>' class='tweet'>"
-                + "<span class='thumb' style='background-image:url(<%=profile_image_url%>)'></span>"
-                + "<span class='popup'>"
-                + "<span class='title'>@<%=from_user%></span>"
-                + "<small><%=text%></small>"
-                + "</span>"
-                + "</a>";
-            var t = _(resp.results.slice(0,30))
-                .map(function(i) { return _(template).template(i); })
-                .join('');
-            tweets.append(t).addClass('loaded');
+          renderFollowers(resp["ids"]);
         }
     });
-};
-$(longneck.tweets);
 
+    function renderFollowers(ids) {
+      console.log(ids.length)
+      $.ajax({
+        url: 'http://api.twitter.com/1/users/lookup.json?user_id=' + ids.join(","),
+        dataType: 'jsonp',
+        success: function(r) {
+          console.log(resp);
+        }
+      });
+    }
+};
+$(longneck.twitterFollowers);
 
 longneck.tweets = function() {
     var tweets = $('.tweets');
