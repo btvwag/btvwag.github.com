@@ -88,7 +88,6 @@ longneck.twitterFollowers = function() {
     });
 
     function renderFollowers(ids) {
-      console.log(ids.length)
       $.ajax({
         url: 'http://api.twitter.com/1/users/lookup.json?user_id=' + ids.slice(0,100).join(","),
         dataType: 'jsonp',
