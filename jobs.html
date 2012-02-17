@@ -6,11 +6,13 @@ meta-keywords: "Burlington, Group, Web, Ruby, Ruby on Rails, JavaScript, Vermont
 ---
 
 <div class='row-fluid'>
-  <div class="span8 well">
-    <h2>Jobs</h2>
-    {% for item in site.categories.jobs %}
-      {% include job.html %}
-    {% endfor %}
+  <div class="span8">
+    <div class="well">
+      <h2>Jobs</h2>
+      {% for item in site.categories.jobs %}
+        {% include job.html %}
+      {% endfor %}
+    </div>
   </div>
   <div class="span3">
     <div class="well">
