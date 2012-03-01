@@ -14,7 +14,7 @@ Please join us for a lightning talk round of presentations.
 
 This will be an exciting event with multiple Vermont Software-as-a-Service related companies presenting back-to-back lightning talks about their Web App, technologies used, scaling, and biggest lessons.  
 
-Presentations will be back to back, each company gets less than 10 minutes... followed by a group question & answer period.
+Each company gets less than 10 minutes, followed by a group question & answer period when all presentations are completed.  
 
 Company presentations include:
 
