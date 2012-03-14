@@ -1,8 +1,8 @@
 ---
 layout: post
-when: March 21st, 2012
+when: March 21st, 2012 from 6:30 - 8:30pm
 guestlist_id: 90291
-where: TBD
+where: Dealer.com Theatre Rm. Located at 1 Howard Street Burlington, VT 05401
 what: presentation
 who: Dealer.com, Draker Labs, MicroStrain, Agilion Apps, PIEmatrix
 title:  Lightning Talks
