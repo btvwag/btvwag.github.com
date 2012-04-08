@@ -8,6 +8,7 @@ who: Dealer.com, Draker Labs, MicroStrain, Agilion Apps, PIEmatrix
 title:  Lightning Talks
 byline: written by Adam Bouchard
 category: event
+slides: <script async class="speakerdeck-embed" data-id="4f6b3b79d17135002202479f" data-ratio="1.3333333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 ---
 
 Please join us for a lightning talk round of presentations.  
