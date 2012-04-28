@@ -2,8 +2,7 @@
 layout: post
 when: May 9th, 2012 from 6:30 - 8:30pm
 guestlist_id: 102711
-where: University of Vermont, Votey Engineering Building 207,
-Burlington, VT 05401
+where: University of Vermont, Votey Engineering Building 207, Burlington, VT 05401
 what: presentation
 who: Kevin Braun, Rick Cusick, Mike Fowler, Everett McKay, and Michael Ware
 title:  UI/UX/Design Lightning Talks
