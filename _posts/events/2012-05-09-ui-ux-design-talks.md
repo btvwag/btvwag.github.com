@@ -18,26 +18,26 @@ Each individual gets 10-15 minutes, followed by a group question & answer period
 
 Hope to see you there!
 
-## Presentations include:
+### Presentations include:
 
-### Kevin Braun (User Experience Manager at Draker)
+#### Kevin Braun (User Experience Manager at Draker)
 
 Kevin will be discussing UX(user experience) in comparison to UCD(user centered design), along with the differences between interaction design and interface design.
 
-### Rick Cusick (CIO at Reading Plus)
+#### Rick Cusick (CIO at Reading Plus)
 
 How we integrated UX practices into our Agile development process at Reading Plus.
 
-### Mike Fowler (User Interface Developer at MyWebGrocer)
+#### Mike Fowler (User Interface Developer at MyWebGrocer)
 
 Mike will discuss Responsive design with CSS pre-processors, Sass and Compass
 
-### Everett McKay (Principal of UX Design Edge)
+#### Everett McKay (Principal of UX Design Edge)
 
 Have you ever wondered why UI design is so hard? The top challenge is to think about design the right way.
 
 In this talk, Everett McKay (a programmer!) explains the UI design approach often used by programmers, exactly why such designs fail with users, and presents a technique that programmers can use to design in a truly user-centered way.
 
-### Michael Ware (Web designer/developer at North American Breweries)
+#### Michael Ware (Web designer/developer at North American Breweries)
 
 Michael will present on the role of emotional design in UX development and the centrality of design early in the development process.
