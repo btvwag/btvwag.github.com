@@ -22,7 +22,9 @@ Hope to see you there!
 
 #### Kevin Braun (User Experience Manager at Draker)
 
-Kevin will be discussing UX(user experience) in comparison to UCD(user centered design), along with the differences between interaction design and interface design.
+UX. It's more than you think.
+
+The term UX is thrown around a lot today but most people don't really know what it means. I'm going to discuss a holistic user experience process and how that relates to UCD (User Centered Design) along with the differences between interaction design and interface design.
 
 #### Rick Cusick (CIO at Reading Plus)
 
