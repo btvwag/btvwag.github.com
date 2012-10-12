@@ -23,11 +23,15 @@ meta-keywords: "Burlington, Group, Web, Ruby, Ruby on Rails, JavaScript, Vermont
       <div class="row-fluid">
         <div class="span4">
           <h3>Announcement</h3>
-          <h4>Networking Refactored</h4>
-          <h5>Tuesday, Sept. 25th, 2012</h5>
-          <a href="http://guestli.st/121080">Networking Refactored</a>
-          <p>Help us spread the word...</p>
-          <p><a class="btn btn-primary" href="http://guestli.st/121080">View details &raquo;</a></p>
+          <h4>JavaScript Lightning Talks</h4>
+          <h5>Wednesday, Nov. 7th, 2012</h5>
+          <h5>University of Vermont</h5>
+          <p>
+            Please join us for another lightning talk round of presentations!
+          </p>
+          <p>
+            <a href="{% for event in site.categories.event limit:1 %}{{ event.url }}{% endfor %}" class="btn btn-primary">View Details &raquo;</a>
+          </p>
         </div>
 
         <div class="span4">
