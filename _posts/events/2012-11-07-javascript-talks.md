@@ -4,7 +4,7 @@ when: Nov 7th, 2012 from 6:30 - 9:00pm
 guestlist_id: 129999
 where: University of Vermont, Perkins 101, Burlington, VT 05401
 what: presentation
-who: Patrick Berkeley, Dan Bowles, John Need, Tristan O'Neil
+who: Patrick Berkeley, Dan Bowles, Jess Lilly, John Need, Tristan O'Neil
 title: JavaScript Lightning Talks
 byline: written by Peter Brown
 category: event
@@ -28,6 +28,12 @@ CommonJS Promises/A pattern as it's implemented in jQuery.
 
 Dan will be speaking on OOJS, prototypes and useful patterns when dealing with them.
 He is a developer on the Web Architecture team at Dealer.com.  Lover of The Web, Bacon and LEGO bricks.
+
+#### Jess Lilly - Dojo Toolkit
+
+Jess will provide an introduction to Dojo, Dojo UI widgets and graphs, and
+Dojo Mobile. He is a jack of all trades, lives in Burlington, and works at IBM
+as a software and web developer.
 
 #### John Need - Build a web-app in 20 minutes with Ember.js
 
