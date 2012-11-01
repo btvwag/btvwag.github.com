@@ -40,11 +40,11 @@ as a software and web developer.
 Ember.js is a JavaScript web application framework with built-in
 two-way data binding.
 
-#### Tristan O'Neil - PJAX: Full Page Reloads Are For Suckers
+#### Tristan O'Neil - CoffeeScript: A Brief Introduction
 
-Everybody wants their web app to be fast. On the client side this can be solved
-in a variety of ways. Wouldn't it be nice to solve it with no (or very little)
-effort? PJAX is AJAX + pushSate. PJAX fetches HTML from your web server and
-loads it into the current page without a full page reload. The speed of AJAX
-and the usability of a regular HTML page, real permalinks, page titles, and a working back button.
-
+The creator of JavaScript, Brendan Eich was quoted as saying "JS had to 'look like Java'
+only less so, be Java’s dumb kid brother or boy-hostage sidekick. Plus, I had to be done
+in ten days or something worse than JS would have happened.". This is where CoffeeScript
+comes in. CoffeeScript is a little language that compiles to JavaScript that attempts to
+bring beauty and a little sanity to JavaScript. In this talk we'll explore the basics of
+this language and why you might benefit from using it.
