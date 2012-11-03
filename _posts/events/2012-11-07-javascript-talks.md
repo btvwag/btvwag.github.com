@@ -2,7 +2,7 @@
 layout: post
 when: Nov 7th, 2012 from 6:30 - 9:00pm
 guestlist_id: 129999
-where: University of Vermont, Perkins 101, Burlington, VT 05401
+where: University of Vermont, Votey 105, Burlington, VT 05401
 what: presentation
 who: Patrick Berkeley, Dan Bowles, Jess Lilly, John Need, Tristan O'Neil
 title: JavaScript Lightning Talks
