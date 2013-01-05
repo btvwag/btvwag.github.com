@@ -5,14 +5,9 @@ link: http://www.bluehousegroup.com/careers/experienced-php-developer/
 category: jobs
 ---
 
-
 ### Experienced PHP Developer
-Two Web Developers Wanted
 
-We're growing and we're looking to add two Web developers to the team.  We've consolidated the job description into this single listing, since the two positions are so similar.  
-
-As a Web Developer at Bluehouse Group, you will create high quality, custom solutions for a variety of clients.  Working with a team of designers, developers, and account managers, you will exercise your creative and technical skills in a dynamic collaborative environment. 
-environment.
+As a Web Developer at Bluehouse Group, you will create high quality, custom solutions for a variety of clients.  Working with a team of designers, developers, and account managers, you will exercise your creative and technical skills in a dynamic collaborative environment.
 
 JOB REQUIREMENTS:
 * Strong proficiency in object-oriented PHP and MySQL
