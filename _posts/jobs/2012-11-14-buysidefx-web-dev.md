@@ -8,24 +8,26 @@ category: jobs
 
 ### Web Application Developer
 
-BuysideFX is seeking a skilled web application developer interested in applying their abilities in the areas of FX order staging, FX price aggregation, rules engine based workflow, FX trade execution, portfolio risk management, trade cost analysis, and reporting.
+BuysideFX is seeking a skilled web application developer interested in applying their abilities and the latest technologies in the areas of capital markets and foreign exchange (FX).
 
 ### Technologies
 
-Technologies currently used include Ruby, Ruby on Rails, JavaScript/CoffeeScript, HTML5, CSS3, Postgres, synchronous and asynchronous queue based communications like ActiveMQ.
-
+Javascript/Javascript Frameworks, HTML5, CSS3, Coffeescript, Sass, websockets, and JSON.
 
 ### Responsibilities
-* Design and develop internal infrastructure to support an automated build, test, and release process.
-* End-to-end web application development (database, business logic, front-end) for new features and web apps for the BuysideFX product.
-* Fix product defects.
+* Create functional, high-performance JavaScript, HTML/CSS layouts from UI/UX requirements and mockups.
+* Work with senior backend developers to build a complex, multithreaded, end-to-end application with a fantastic user experience.
+* Investigate the latest web and mobile platform technologies for use in the BuysideFX product.
 * Work productively within a team of very talented software developers in a semi-virtual environment.
 * Contribute enthusiasm and creativity to help create awesomeness.
 
 ### Core Experience/Qualifications 
-* At least a few years of professional experience in technologies like Ruby on Rails, Postgres, HTML/CSS/Javascript, (jQuery), Git, RESTful web service API development and documentation.
-* Understanding of fundamental web application design principals and model-view-controller frameworks.
-* Understanding of fundamental service-oriented-architecture design, and experience with ActiveMQ or queuing technology.
-* Action and detail oriented.
-* Outstanding problem-solving skills.
-* Good communication skills with the ability to collaborate and foster teamwork in a semi-virtual work environment .
+* Professional experience in technologies such as HTML5, CSS3, Javascript (jQuery), and Git.
+* Mastery of web UI architecture and development practices.
+* Familiarity with Javascript Frameworks and websockets.
+* Understanding of designing/building for cross-browser compatibility.
+* Knowledge of Javascript testing frameworks and mobile web development are a plus.
+* Experience with manipulating JSON objects and communicating with APIs.
+* Outstanding problem-solving and communication skills.
+* Highly motivated and passionate.
+* Works well independently and as a team member.
