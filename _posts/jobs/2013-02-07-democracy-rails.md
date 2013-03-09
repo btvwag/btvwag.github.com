@@ -1,11 +1,11 @@
 ---
 company: Democracy for America
-title: Ruby on Rails Web Developer
+title: Web Developer
 link: http://democracyforamerica.com/jobs
 category: jobs
 ---
 
-### Ruby on Rails Web Developer
+### Web Developer
 
 Our data team is looking for a sharp, professional web developer to
 assist in coding our primary website, managing the flow of our data
