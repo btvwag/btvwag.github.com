@@ -22,16 +22,19 @@ meta-keywords: "Burlington, Group, Web, Ruby, Ruby on Rails, JavaScript, Vermont
     <div class="clearfix well">
       <div class="row-fluid">
         <div class="span4">
-          <h3>Announcement</h3>
-          <h4>QA Talks</h4>
-          <h5>Wednesday, March 13th, 2013</h5>
-          <h5>University of Vermont</h5>
+          {% for event in site.categories.event limit:1 %}
+          <h3>Meet Up Announcement</h3>
+          <h4>{{ event.title }} </h4>
+          <h5>{{ event.when }} </h5>
+          <h5>{{ event.where }}</h5>
           <p>
-            Please join us for an evening of software testing presentations!
+            Please join us for a fun evening of presentations from local
+            web developers!
           </p>
           <p>
-            <a href="{% for event in site.categories.event limit:1 %}{{ event.url }}{% endfor %}" class="btn btn-primary">View Details &raquo;</a>
+            <a href="{{ event.url }}" class="btn btn-primary">View Details &raquo;</a>
           </p>
+          {% endfor %}
         </div>
 
         <div class="span4">
