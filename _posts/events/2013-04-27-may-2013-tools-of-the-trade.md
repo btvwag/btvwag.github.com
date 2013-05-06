@@ -2,7 +2,7 @@
 layout: post
 when: May 22nd, 2013 at 6:30pm - 8:30pm
 guestlist_id: 162534
-where: Burlington, VT (location TBD)
+where: Office Squared, 77 College St., Burlington, VT
 what: presentations
 who: Rebecca Grenier, Odie Routh and Alan Peabody
 title: Tools of the Trade
