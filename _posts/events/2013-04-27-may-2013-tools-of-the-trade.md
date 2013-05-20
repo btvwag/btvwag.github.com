@@ -25,8 +25,6 @@ Rebecca Grenier is a Software Developer at EatingWell in Shelburne, VT where she
 
 #### Odie Routh and Alan Peabody - Chef + Vagrant
 
-More details to come, but this talk with provide an overview of:
+This talk will introduce two complimentary tools for automating your infrastructure, Vagrant and Chef. 
 
-* What is vagrant and how can you integrate it with your existing tools.
-* How you can use Chef (or Puppet) to configure vagrant.
-* Using a tool like librarian-chef to manage your cookbooks.
+First we will touch on Vagrant and how it can integrate with your existing tools to standardize your development environments. Then we will dig into Chef and the power it provides to automate your infrastructure. With the two building blocks in place we will explain basic integration of the two tools. Finally we will wrap up by touching on some of the other amazing ways these two extremely powerful and versatile tools can be combined.
