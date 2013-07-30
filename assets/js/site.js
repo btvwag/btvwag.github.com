@@ -48,33 +48,69 @@ longneck.githubWatcherProject = function(resp) {
     getProjects(shuffled[i]);
 };
 
-longneck.githubWatchers = function() {
-    var watchers = $('.github-followers');
+create_nav_buttons = function(links) {
+    var ICON_FOR_LINK = {
+	first: 'fast-backward',
+	prev:  'backward',
+	next:  'forward',
+	last:  'fast-forward'
+    };
+
+    var link_template =
+	"<a class='btn btn-primary' href='<%=link_type%>' data-href='<%=url%>' title='<%=link_type%> page'>" +
+	"<span class='icon-<%=icon%> icon-white'/>" +
+	"</a>";
+
+    var t = _(links)
+	.map(function(i) {
+	    link_type = i[1].rel;
+	    return _(link_template).template({url: i[0], icon: ICON_FOR_LINK[link_type], link_type: link_type});
+	})
+	.join('');
+
+    var followers_nav = $('.github-followers-nav');
+    followers_nav.empty();
+    followers_nav.append(t);
+
+    followers_nav.children('a').click(function(event) {
+	event.preventDefault();
+	$(longneck.githubFollowers(this.dataset.href));
+    });
+}
+
+longneck.githubFollowers = function(url) {
     $.ajax({
         // TODO: this endpoint only returns maximum 30 users. Implement random
         // pagination so we see different groups of people.
-        url: 'https://api.github.com/repos/' +
-            site.github_login + '/' +
-            site.github_repo + '/watchers',
+        url: url,
         dataType: 'jsonp',
         success: function(resp) {
-            if (!resp.data.length) return;
-            longneck.githubWatcherProject(resp);
-            var template =
+	    if (!resp.data.length) return;
+	    longneck.githubWatcherProject(resp);
+	    var template =
                 "<a class='github-user' target='_blank' href='http://github.com/<%=login%>'>" +
                 "<span style='background-image:url(<%=avatar_url%>)' class='thumb' /></span>" +
                 "<span class='popup'>" +
                 "<span class='title'><%=login%></span>" +
                 "</span>" +
                 "</a>";
-            var t = _(resp.data)
+	    var t = _(resp.data)
                 .map(function(i) { return _(template).template(i); })
                 .join('');
-            watchers.append(t);
+
+	    var followers = $('.github-followers');
+	    followers.empty();
+	    followers.append(t);
+
+	    create_nav_buttons(resp.meta.Link);
         }
     });
 };
-$(longneck.githubWatchers);
+$(longneck.githubFollowers(
+    'https://api.github.com/repos/' +
+        site.github_login + '/' +
+        site.github_repo + '/stargazers'
+));
 
 longneck.twitterFollowers = function() {
     var tweets = $('.twitter-followers');
