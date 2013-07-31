@@ -11,7 +11,7 @@ longneck.githubWatcherProject = function(resp) {
     var shuffled = _(resp.data).shuffle();
 
     var getProjects = function(u) {
-        var languages = site.github_language.split(',')
+        var languages = site.github_language.split(',');
         $.ajax({
             url: 'https://api.github.com/users/' + u.login + '/repos',
             dataType: 'jsonp',
@@ -41,7 +41,6 @@ longneck.githubWatcherProject = function(resp) {
                     var t = _(template).template(repo);
                     watcherProject.append(t).addClass('loaded');
                 }
-
             }
         });
     };
@@ -50,33 +49,33 @@ longneck.githubWatcherProject = function(resp) {
 
 create_nav_buttons = function(links) {
     var ICON_FOR_LINK = {
-	first: 'fast-backward',
-	prev:  'backward',
-	next:  'forward',
-	last:  'fast-forward'
+        first: 'fast-backward',
+        prev:  'backward',
+        next:  'forward',
+        last:  'fast-forward'
     };
 
     var link_template =
-	"<a class='btn btn-primary' href='<%=link_type%>' data-href='<%=url%>' title='<%=link_type%> page'>" +
-	"<span class='icon-<%=icon%> icon-white'/>" +
-	"</a>";
+        "<a class='btn btn-primary' href='<%=link_type%>' data-href='<%=url%>' title='<%=link_type%> page'>" +
+        "<span class='icon-<%=icon%> icon-white'/>" +
+        "</a>";
 
     var t = _(links)
-	.map(function(i) {
-	    link_type = i[1].rel;
-	    return _(link_template).template({url: i[0], icon: ICON_FOR_LINK[link_type], link_type: link_type});
-	})
-	.join('');
+        .map(function(i) {
+            link_type = i[1].rel;
+            return _(link_template).template({url: i[0], icon: ICON_FOR_LINK[link_type], link_type: link_type});
+        })
+        .join('');
 
     var followers_nav = $('.github-followers-nav');
     followers_nav.empty();
     followers_nav.append(t);
 
     followers_nav.children('a').click(function(event) {
-	event.preventDefault();
-	$(longneck.githubFollowers(this.dataset.href));
+        event.preventDefault();
+        $(longneck.githubFollowers(this.dataset.href));
     });
-}
+};
 
 longneck.githubFollowers = function(url) {
     $.ajax({
@@ -85,24 +84,24 @@ longneck.githubFollowers = function(url) {
         url: url,
         dataType: 'jsonp',
         success: function(resp) {
-	    if (!resp.data.length) return;
-	    longneck.githubWatcherProject(resp);
-	    var template =
+            if (!resp.data.length) return;
+            longneck.githubWatcherProject(resp);
+            var template =
                 "<a class='github-user' target='_blank' href='http://github.com/<%=login%>'>" +
                 "<span style='background-image:url(<%=avatar_url%>)' class='thumb' /></span>" +
                 "<span class='popup'>" +
                 "<span class='title'><%=login%></span>" +
                 "</span>" +
                 "</a>";
-	    var t = _(resp.data)
+            var t = _(resp.data)
                 .map(function(i) { return _(template).template(i); })
                 .join('');
 
-	    var followers = $('.github-followers');
-	    followers.empty();
-	    followers.append(t);
+            var followers = $('.github-followers');
+            followers.empty();
+            followers.append(t);
 
-	    create_nav_buttons(resp.meta.Link);
+            create_nav_buttons(resp.meta.Link);
         }
     });
 };
