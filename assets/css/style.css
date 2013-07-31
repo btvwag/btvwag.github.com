@@ -124,6 +124,8 @@ a.tweet {
 .github-user:hover .caret,
 .github-user:hover .popup { display:block; }
 
+.github-followers-nav { clear: both; }
+
 .buttons {
   margin-bottom:10px;
   width:205px;
