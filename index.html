@@ -21,7 +21,7 @@ meta-keywords: "Burlington, Group, Web, Ruby, Ruby on Rails, JavaScript, Vermont
 
     <div class="clearfix well">
       <div class="row-fluid">
-        <div class="span4">
+        <div class="span6">
           {% for event in site.categories.event limit:1 %}
           <h3>Meet Up Announcement</h3>
           <h4>{{ event.title }} </h4>
@@ -36,17 +36,9 @@ meta-keywords: "Burlington, Group, Web, Ruby, Ruby on Rails, JavaScript, Vermont
           {% endfor %}
         </div>
 
-        <div class="span4">
-          <h3>Github Highlight</h3>
-          <p>Randomly selected member github project</p>
-          <div class="follower-project"></div>
-        </div>
-
-        <div class="span4">
-          <h3>{{ site.hashtag }} tweets</h3>
-          <div class="tweets clearfix">
-          </div>
-          <p><a class="btn btn-primary" href="https://twitter.com/#!/search/btvwag">See more &raquo;</a></p>
+        <div class="span6">
+          <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/btvwag" data-widget-id="371957195975303170">Tweets by @btvwag</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         </div>
       </div>
     </div>
@@ -54,21 +46,21 @@ meta-keywords: "Burlington, Group, Web, Ruby, Ruby on Rails, JavaScript, Vermont
 
   <div class="span3">
     <div class="well">
-      <h2>About BTVWAG</h2>
-      <p class="description">
-        {{page.meta-description}}
-        We meet once a month or two in Burlington to discuss a variety of web-related topics. See our <a href="{% for event in site.categories.event limit:1 %}{{ event.url }}{% endfor %}">past events</a> for a list of previous topics.
-      </p>
-      <a href="{% for event in site.categories.event limit:1 %}{{ event.url }}{% endfor %}" class="btn btn-primary btn-large">Upcoming Events &raquo;</a>
-    </div>
-
-    <div class="well">
       <h2>Newsletter Signup</h2>
       <p>Event announcements, meeting notes, tech articles and job postings. <a href="http://eepurl.com/lVkBf">Preview issue #1</a></p>
       <form action="http://btvwag.us5.list-manage.com/subscribe/post?u=1bc6d2648499cf76a23abcee1&amp;id=60c657c8f9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
         <input type="email" value="" name="EMAIL" class="span10 required email" id="mce-EMAIL" placeholder="Email Address">
         <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
       </form>
+    </div>
+
+    <div class="well">
+      <h2>About BTVWAG</h2>
+      <p class="description">
+        {{page.meta-description}}
+        We meet once a month or two in Burlington to discuss a variety of web-related topics. See our <a href="{% for event in site.categories.event limit:1 %}{{ event.url }}{% endfor %}">past events</a> for a list of previous topics.
+      </p>
+      <a href="{% for event in site.categories.event limit:1 %}{{ event.url }}{% endfor %}" class="btn btn-primary btn-large">Upcoming Events &raquo;</a>
     </div>
 
     <div class="well">
