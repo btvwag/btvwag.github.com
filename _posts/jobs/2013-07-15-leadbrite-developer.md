@@ -1,13 +1,13 @@
 ---
-company: LeadBrite
+company: LeadPages
 title: Senior Software Developer (Remote)
-link: http://www.leadbrite.com/work-for-us-were-hiring/senior-software-developer/
+link: https://www.leadpages.net/work-for-us-were-hiring/senior-software-developer/
 category: jobs
 ---
 
-### LeadBrite - Senior Software Developer (Remote)
+### LeadPages - Senior Software Developer (Remote)
 
-Hi, we're LeadBrite and we create beautiful software and web apps that allow businesses to grow large and devoted audiences (and their lists of leads).
+Hi, we're LeadPages and we create beautiful software and web apps that allow businesses to grow large and devoted audiences (and their lists of leads).
 
 We're looking for an amazing Senior Software Developer who has turbo-charged skills, thinks deeply about the best solutions, and wants to work with a fantastic team of people. You'll need to be a dynamic person that has a unique combination of skills, talents and mindset. We have a few stellar developers already on our team and are looking to add one more. The best part? This is a virtual position, so you can live and work anywhere in the world. 
 
@@ -33,4 +33,4 @@ You'll always be treated with respect, will laugh a lot throughout the day and w
 
 SOUND LIKE YOU?
 
-If this sounds like you, [check us out here](http://www.leadbrite.com/work-for-us-were-hiring/senior-software-developer/) to learn more and apply.
+If this sounds like you, [check us out here](https://www.leadpages.net/work-for-us-were-hiring/senior-software-developer/) to learn more and apply.
