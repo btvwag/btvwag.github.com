@@ -1,7 +1,7 @@
 ---
 layout: post
 when: October 10th, 2013 at 6:30pm - 8:30pm
-where: Burlington, VT - TBD
+where: Burlington, VT - Office Squared, 77 College St.
 what: presentations
 who: Brandon Savage
 title: Design Patterns
