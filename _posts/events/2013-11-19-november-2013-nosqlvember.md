@@ -12,6 +12,8 @@ category: event
 Please join us on Tuesday, November 19th for an evening of lightning
 talk-style presentations on the topic of NoSQL databases.
 
+Register now at [http://www.meetup.com/VTCode/events/146373102/](http://www.meetup.com/VTCode/events/146373102/)
+
 ### We're seeking speakers!
 
 Do you have any knowledge surrounding Couch, Mongo, Redis, Cassandra, Hbase, Riak, Neo4j, FlockDB or any other NoSQL database technology? Are you interested in learning about any of these technologies? BTVWAG is planning a November NoSQL Lightning Talks Meetup, and we are looking for members of the community who are passionate or interested in NoSQL databases to speak.
@@ -20,4 +22,4 @@ If you are interested in speaking, please reach out at: [contact@btvwag.org](mai
 
 ---
 
-Registration opening soon!
+Register now at [http://www.meetup.com/VTCode/events/146373102/](http://www.meetup.com/VTCode/events/146373102/)
