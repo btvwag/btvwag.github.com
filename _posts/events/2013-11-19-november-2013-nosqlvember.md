@@ -25,12 +25,6 @@ Register now at [http://www.meetup.com/VTCode/events/146373102/](http://www.meet
 * **RavenDB** - by [Julie Lerman](https://twitter.com/julielerman)
 * **Azure Table Storage** - by Zac Morris
 
-### We're seeking speakers!
-
-Do you have any knowledge surrounding <del>CouchDB</del>, <del>MongoDB</del>, <del>Redis</del>, <del>Cassandra</del>, Hbase, <del>Riak</del>, Neo4j, FlockDB or any other NoSQL database technology? Are you interested in learning about any of these technologies? We are looking for members of the community who are passionate or interested in NoSQL databases to speak.
-
-If you are interested in speaking, please reach out at: [contact@btvwag.org](mailto:contact@btvwag.org) or join the [discussion online](http://vtonline.org/t/seeking-speakers-btvwag-nosql-night-nov-19th/11).
-
 ---
 
 Register now at [http://www.meetup.com/VTCode/events/146373102/](http://www.meetup.com/VTCode/events/146373102/)
