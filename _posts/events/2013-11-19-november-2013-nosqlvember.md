@@ -22,6 +22,8 @@ Register now at [http://www.meetup.com/VTCode/events/146373102/](http://www.meet
 * **ElasticSearch** - by [Evan Borden](https://twitter.com/evanborden)
 * **MongoDB** - by [Kevin Thorley](https://twitter.com/kevinthorley)
 * **CouchDB** - by [Bradley Holt](https://twitter.com/BradleyHolt)
+* **RavenDB** - by [Julie Lerman](https://twitter.com/julielerman)
+* **Azure Table Storage** - by Zac Morris
 
 ### We're seeking speakers!
 
